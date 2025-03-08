@@ -3,6 +3,8 @@ package org.example;
 import org.example.exercicio10.Monitoramento;
 import org.example.exercicio11.PedidoService;
 import org.example.exercicio11.StatusPedido;
+import org.example.exercicio12.NotificacaoService;
+import org.example.exercicio12.TipoNotificacao;
 import org.example.exercicio5.ClienteClassificador;
 import org.example.exercicio6.Nationality;
 import org.example.exercicio7.Relatorio;
@@ -102,6 +104,22 @@ public class Main {
 //        System.out.println("\nTestando status ENTREGUE:");
 //        pedidoService.atualizarStatus(StatusPedido.ENTREGUE);
 
+
+        NotificacaoService service = new NotificacaoService();
+
+
+        service.enviarNotificacao(TipoNotificacao.EMAIL);
+
+
+        service.enviarNotificacao(TipoNotificacao.SMS);
+
+
+        service.enviarNotificacao(TipoNotificacao.PUSH);
+        try {
+            service.enviarNotificacao(null);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
 
     }
 
