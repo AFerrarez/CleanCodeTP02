@@ -1,6 +1,8 @@
 package org.example;
 
 import org.example.exercicio10.Monitoramento;
+import org.example.exercicio11.PedidoService;
+import org.example.exercicio11.StatusPedido;
 import org.example.exercicio5.ClienteClassificador;
 import org.example.exercicio6.Nationality;
 import org.example.exercicio7.Relatorio;
@@ -75,16 +77,32 @@ public class Main {
 //        System.out.println("Visualizando: " + fila.vizualisarProximaMensagem());
 //        fila.adicionarMensagens("Mensagem 1");
 //        System.out.println("Visualizando: " + fila.vizualisarProximaMensagem());
-
-        Monitoramento monitoramento = new Monitoramento();
-
-        System.out.println("Acessos iniciais: " + monitoramento.getContadorAcessos());
-
-        monitoramento.incrementarAcessos();
-        monitoramento.incrementarAcessos();
-
-        System.out.println("Acessos após incrementos: " + monitoramento.getContadorAcessos());
+//
+//        Monitoramento monitoramento = new Monitoramento();
+//
+//        System.out.println("Acessos iniciais: " + monitoramento.getContadorAcessos());
+//
+//        monitoramento.incrementarAcessos();
+//        monitoramento.incrementarAcessos();
+//
+//        System.out.println("Acessos após incrementos: " + monitoramento.getContadorAcessos());
+//
+//        PedidoService pedidoService = new PedidoService();
+//
+//        // Testando cada status do enum
+//        System.out.println("Testando status PENDENTE:");
+//        pedidoService.atualizarStatus(StatusPedido.PENDENTE);
+//
+//        System.out.println("\nTestando status PROCESSANDO:");
+//        pedidoService.atualizarStatus(StatusPedido.PROCESSANDO);
+//
+//        System.out.println("\nTestando status ENVIADO:");
+//        pedidoService.atualizarStatus(StatusPedido.ENVIADO);
+//
+//        System.out.println("\nTestando status ENTREGUE:");
+//        pedidoService.atualizarStatus(StatusPedido.ENTREGUE);
 
 
     }
+
 }
