@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.exercicio10.Monitoramento;
 import org.example.exercicio5.ClienteClassificador;
 import org.example.exercicio6.Nationality;
 import org.example.exercicio7.Relatorio;
@@ -75,6 +76,14 @@ public class Main {
 //        fila.adicionarMensagens("Mensagem 1");
 //        System.out.println("Visualizando: " + fila.vizualisarProximaMensagem());
 
+        Monitoramento monitoramento = new Monitoramento();
+
+        System.out.println("Acessos iniciais: " + monitoramento.getContadorAcessos());
+
+        monitoramento.incrementarAcessos();
+        monitoramento.incrementarAcessos();
+
+        System.out.println("Acessos após incrementos: " + monitoramento.getContadorAcessos());
 
 
     }
