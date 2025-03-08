@@ -2,8 +2,11 @@ package org.example;
 
 import org.example.exercicio5.ClienteClassificador;
 import org.example.exercicio6.Nationality;
+import org.example.exercicio7.Relatorio;
+import org.example.exercicio7.service.RelatorioService;
 
 import java.awt.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -54,6 +57,11 @@ public class Main {
 //        String resultado6 = classificador.classificarCliente(40, 4000, 10, "Salvador");
 //        System.out.println("Teste 6 (40 anos, renda 4000, 10 compras): " + resultado6);
 
+//        RelatorioService relatorio = new RelatorioService();
+//        System.out.println("Tipo de relatorio selecionado:");
+//        Scanner scanner = new Scanner(System.in);
+//        String tipo = scanner.nextLine();
+//        relatorio.gerarRelatorio(tipo);
 
     }
 }
