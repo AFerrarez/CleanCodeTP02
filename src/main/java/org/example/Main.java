@@ -4,6 +4,7 @@ import org.example.exercicio5.ClienteClassificador;
 import org.example.exercicio6.Nationality;
 import org.example.exercicio7.Relatorio;
 import org.example.exercicio7.service.RelatorioService;
+import org.example.exercicio9.FilaMensagens;
 
 import java.awt.*;
 import java.util.Scanner;
@@ -62,6 +63,19 @@ public class Main {
 //        Scanner scanner = new Scanner(System.in);
 //        String tipo = scanner.nextLine();
 //        relatorio.gerarRelatorio(tipo);
+//
+//        FilaMensagens fila = new FilaMensagens();
+//
+//        fila.adicionarMensagens("Mensagem 1");
+//        fila.adicionarMensagens("Mensagem 2");
+//
+//        System.out.println("Visualizando: " + fila.vizualisarProximaMensagem());
+//
+//        System.out.println("Visualizando: " + fila.vizualisarProximaMensagem());
+//        fila.adicionarMensagens("Mensagem 1");
+//        System.out.println("Visualizando: " + fila.vizualisarProximaMensagem());
+
+
 
     }
 }
